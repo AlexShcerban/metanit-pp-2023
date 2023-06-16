@@ -10,15 +10,16 @@
 
 
     //https://www.figma.com/file/t7GIUFphNlUpyUg6koubUb/metanit?type=design&node-id=4-6024&t=Ce32M1B7TwzLnxAC-0
-    //1 день - 3 часа
-    //2 день  14.30 - 15.30, 
+    //1 день  3 часа
+    //2 день  14.30 - 15.30  1 час
+    //3 день  18:14 - 18:49  30 минут
+    //4 день  17:35 - 20:00  2,5 часов
+    
 
-
-    //форма доната !!! 1
-    //картинки !!! 3
+    //форма доната на странице  !!!!!
+    //поиск и чтобы он работал по enter  !!!!!
     //бд 
-    //описание языка тоже сделать через php !!! 2
-    //поиск
+    //описание языка тоже сделать через php  !!!!!
     //другие языки
 
     //адаптив
@@ -48,6 +49,36 @@
             Поиск
         </div>
     </header>
+    <div id = "background">
+        <img src="img/bg-2.png" id = "bg_2">
+        <img src="img/bg-1.png" id = "bg_1">
+    </div>
+
+    <!-- Форма доната -->
+    <div id = "donate">
+        <div id = "donate_block">
+            <div id = "donate_text">
+                Хотите помочь сайту? <br><br>
+                Qiwi: <br>
+                <a href="https://www.qiwi.com/n/MITANIT">qiwi.com/n/MITANIT</a><br><br><br>
+                YooMoney: <br>
+                <a href="https://www.qiwi.com/n/MITANIT">410011174743222</a>
+            </div>
+            <div id = "donate_card">
+                <br>
+                Перевод на карту <br>
+                Номер карты: <br>
+                <a href="https://www.qiwi.com/n/MITANIT">4048415020898850</a> <br>
+            </div>
+        </div>
+        <div id = "donate_a">
+            <a href="https://vk.com/al_im.php?sel=657073694"><div class = "donate_a"><img src="img/search.PNG"></div></a>
+            <a href="https://vk.com/al_im.php?sel=657073694"><div class = "donate_a"><img src="img/search.PNG"></div></a>
+            <a href="https://vk.com/al_im.php?sel=657073694"><div class = "donate_a"><img src="img/search.PNG"></div></a>
+            <a href="https://vk.com/al_im.php?sel=657073694"><div class = "donate_a"><img src="img/search.PNG"></div></a>
+        </div>
+    </div>
+    <!-- ----- -->
 
     <main>
         <div id = "main_h1">Сайт о программировании</div>
@@ -70,8 +101,6 @@
             <?php } ?>
         </div>
     </main>
-
-    <div style = "width: 1440px; background: black;">asdasd</div>
     
     <footer>
         <div id = "footer_email"><div id = "footer_email_text"><a href="mailto:melanit22@mail.ru">melanit22@mail.ru</a></div></div>

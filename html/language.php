@@ -22,6 +22,36 @@
 <body>
     
     <?php require_once "../php/header.php" ?>
+    <div id = "background">
+        <img src="../img/bg-4.png" id = "bg_3">
+        <img src="../img/bg-1.png" id = "bg_1">
+    </div>
+
+    <!-- Форма доната -->
+    <div id = "donate_2">
+        <div id = "donate_block">
+            <div id = "donate_text">
+                Хотите помочь сайту? <br><br>
+                Qiwi: <br>
+                <a href="https://www.qiwi.com/n/MITANIT">qiwi.com/n/MITANIT</a><br><br><br>
+                YooMoney: <br>
+                <a href="https://www.qiwi.com/n/MITANIT">410011174743222</a>
+            </div>
+            <div id = "donate_card">
+                <br>
+                Перевод на карту <br>
+                Номер карты: <br>
+                <a href="https://www.qiwi.com/n/MITANIT">4048415020898850</a> <br>
+            </div>
+        </div>
+        <div id = "donate_a">
+            <a href="https://vk.com/al_im.php?sel=657073694"><div class = "donate_a"><img src="img/search.PNG"></div></a>
+            <a href="https://vk.com/al_im.php?sel=657073694"><div class = "donate_a"><img src="img/search.PNG"></div></a>
+            <a href="https://vk.com/al_im.php?sel=657073694"><div class = "donate_a"><img src="img/search.PNG"></div></a>
+            <a href="https://vk.com/al_im.php?sel=657073694"><div class = "donate_a"><img src="img/search.PNG"></div></a>
+        </div>
+    </div>
+    <!-- ----- -->
 
     <main>
         <div id = "main_h1">О разделе</div>
