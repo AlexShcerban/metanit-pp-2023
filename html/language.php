@@ -1,12 +1,25 @@
 <?php
-    $langid1 = $_GET["lang"]; //id языка
-    $name1 = "c++";  //название страницы
+    require_once "../config/connect.php";
 
-    $count1 = 5; //главы
-    $count2 = 3; //подглавы
+
+    $id = $_GET["lang"]; //id языка
+    $lang = mysqli_query($connect, "SELECT `name`, `description` FROM `language` WHERE `id`=$id");
+    $lang = mysqli_fetch_all($lang);
+    $h1 = mysqli_query($connect, "SELECT `id`, `name`, `number` FROM `h1` WHERE `id-lang`=$id");
+    $h1 = mysqli_fetch_all($h1);
+
+    $page = mysqli_query($connect, "SELECT `id`, `name`, `number`, `id-h1` FROM `h2` WHERE `id-lang`=$id");
+    $page = mysqli_fetch_all($page);
+
+    $name = $lang[0][0];  //название страницы
+    $descript = str_replace("\n", "</p><p>", $lang[0][1]);
+
+    $count1 = count($h1); //главы
+    $count2 = count($page); //подглавы
     $namepage1 = "Введение по C++";
     $namepage2 = "Основные этапы";
     $pageid = 1;
+    
 ?>
 
 
@@ -16,7 +29,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $name1 ?></title>
+    <title><?= $name ?></title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -58,22 +71,23 @@
         <div id = "main_text">
             <p> Данный раздел посвящен языку программирования C++ </p>
 
-            <p> C++ на сегодняшний день является одним из самым 
-            популярных и распространенных языков программирования, который позволяет создавать приложения для любого спектра задач: разработка прикладных приложений, мобильная разработка и особенно системное программирование. Отличительной особенностью программ на C++ является высокая скорость работы, поэтому данные языки особенно часто используются в тех случаях, где необходимо обеспечить высокую производительность и быстродействие.
-            </p>
-            <p> Для изучения базовых концепций языка C++, в разделе имеется Руководство по C++. Для проверки в разделе также есть Упражнения начального уровня
+            <p> 
+                <?= $descript ?>
             </p>
         </div>
 
-        <div id = "main_h1_2">Руководство по <?= $name1 ?></div>
+        <div id = "main_h1_2">Руководство по <?= $name ?></div>
         <div id = "language_list">
-            <?php for ($i=0; $i < $count1; $i++) { ?>
+            <?php for ($i=0; $i < count($h1); $i++) { ?>
                 <p>
-                    Глава <?= $i ?>. <?= $namepage1 ?>
+                    Глава <?= $i ?>. <?= $h1[$i][1] ?>
                     <ul class = "language_ul">
-                        <?php for ($x=0; $x < $count2; $x++) {  ?>
-                            <li><a href="page.php?page=<?= $pageid ?>" class = "language_li"><?= $namepage2 ?></a></li>
-                        <?php } ?>
+
+                        <?php
+                        for ($x=0; $x < count($page); $x++) {  
+                            if($page[$x][3] == $h1[$i][0]){ ?>
+                                <li><a href="page.php?page=<?= $page[$x][0] ?>" class = "language_li"><?= $page[$x][1] ?></a></li>
+                        <?php }} ?>
                     </ul>
                 </p>
             <?php } ?>
