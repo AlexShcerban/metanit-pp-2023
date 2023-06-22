@@ -1,7 +1,7 @@
 a{
     color: black;
     text-decoration: none;
-}
+} 
 
 /* header */
 header{
@@ -26,6 +26,11 @@ header{
     letter-spacing: -0.03em;
     color: #142251;
 }
+#header_button_img{
+    width: 20px;
+    height: 20px;
+    -webkit-user-drag: none;
+}
 #header_button_main{
     margin-top: 37px;
     margin-left: 102px;
@@ -46,8 +51,47 @@ header{
     right: 101px;
     width: 293px;
     height: 53px;
-    background-color: aqua;
 }
+#header_search_text{
+    height: 33px;
+    border-radius: 28px;
+    margin-top: 14px;
+    width: 277px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+#header_search_img{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    border-radius: 28px;
+    background-color: #C89AFC;
+}
+#header_window{
+    width: 195px;
+    height: 495px;
+    display: none;
+    margin-top: 5px;
+    margin-left: 275px;
+    position: absolute;
+    z-index: 5;
+}
+.header_window_button{
+    width: 179px;
+    height: 40px;
+    margin-left: 7px;
+    border-radius: 10px;
+    border: 1px solid rgba(20, 34, 81, 0.30);
+    background: #D6CFFF;
+}
+.header_window_text{
+    margin-top: 20px;
+    margin-left: 20px;
+    transform: translate(0%, -50%);
+
+    color: #142251;
+    font-size: 20px;
+}
+
 /* footer */
 footer{
     transform: translate(-50%, 0%);
@@ -384,4 +428,46 @@ footer{
     position: absolute;
     top: 70px;
     left: 279px;
+}
+
+/* поиск */
+#search{
+    transform: translate(-50%, 0%);
+    margin-left: 50%;
+    margin-top: 50px;
+    height: 33px;
+    width: 450px;
+}
+#search_text{
+    width: 364px;
+    height: 33px;
+    border-radius: 28px;
+    padding: 10px;
+}
+#search_button{
+    position: absolute;
+    margin-left: 20px;
+    width: 61px;
+    height: 33px;
+    border-radius: 28px;
+}
+#search_results{
+    margin-top: 22px;
+    transform: translate(-50%, 0%);
+    margin-left: 50%;
+    width: 183px;
+}
+#search_all{
+    margin-left: 20%;
+    margin-top: 65px;
+    width: 519px;
+}
+.search_block{
+    margin-bottom: 40px;
+}
+.search_name{
+    font-size: 24px;
+}
+.search_folder{
+    color: #7C6AFA;
 }
