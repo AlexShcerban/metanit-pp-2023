@@ -17,6 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Поиск</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 </head>
 <body>
     
@@ -50,6 +51,9 @@
             <?php }} ?>
         </div>
     </main>
-
+    <footer>
+        <div id = "footer_email"><div id = "footer_email_text"><a href="mailto:melanit22@mail.ru">melanit22@mail.ru</a></div></div>
+        <div id = "footer_text">Copyright © metanit.com, 2023. <br> Все права защищены.</div>
+    </footer>
 </body>
 </html>

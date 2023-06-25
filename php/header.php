@@ -2,6 +2,11 @@
     $langid = "1";
     $nameL = "c++";  //
     $count = 5;
+
+    require_once "../config/connect.php";
+    $lang1 = mysqli_query($connect, "SELECT `id`, `name` FROM `language`");
+    $lang1 = mysqli_fetch_all($lang1);
+
 ?>
 
 <script>
@@ -22,8 +27,8 @@
 
     <!-- языки -->
     <div id = "header_block">
-        <?php for ($i=0; $i < $count; $i++) { ?>
-            <a href="../html/language.php?lang=<?= $langid ?>" class = "header_button"><?= $nameL ?></a>
+        <?php for ($i=0; $i < 5; $i++) { ?>
+            <a href="../html/language.php?lang=<?= $lang1[$i][0] ?>" class = "header_button"><?= $lang1[$i][1] ?></a>
         <?php } ?>
         <button onclick = "window_plus()" id = "header_lang_button" class = "header_button">
             <img src = "../img/arrow.PNG"  id = "header_button_img">
@@ -31,9 +36,9 @@
 
         <!-- Дополнительные языки -->
         <div id = "header_window">
-            <?php for ($x=0; $x < 12; $x++) { ?>
+            <?php for ($x=5; $x < 16; $x++) { ?>
             <div class = "header_window_button">
-                <a href="language.php?lang=1"><div class = "header_window_text">Ассемблер</div></a>
+                <a href="language.php?lang=<?= $lang1[$x][0] ?>"><div class = "header_window_text"><?= $lang1[$x][1] ?></div></a>
             </div>
             <?php } ?>
         </div>

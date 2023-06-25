@@ -12,7 +12,7 @@ header{
 #header_block{
     margin-top: 47px;
     margin-left: 487px;
-    width: 411px;
+    width: 460px;
     height: 21px;
     position: absolute;
 }
@@ -87,7 +87,7 @@ header{
     height: 495px;
     display: none;
     margin-top: 5px;
-    margin-left: 275px;
+    margin-left: 345px;
     position: absolute;
     z-index: 5;
 }
@@ -174,7 +174,7 @@ footer{
 #main_text{
     margin-top: 50px;
     margin-left: 200px;
-    width: 440px;
+    width: 500px;
 
     font-family: '?????';
     font-style: normal;
@@ -328,11 +328,12 @@ footer{
 
 #bg_1{
     position: absolute;
-    overflow: hidden;
-    width: 930px;
-    height: 846px;
-    left: 638px;
-    top: 1084px;
+    left: 300px;
+    bottom: 0px;
+    width: 793px;
+    height: 478px;
+    transform: translate(-100%,-100%);
+    background-color: #7C6AFA;
 }
 #bg_2{
     position: absolute;

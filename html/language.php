@@ -31,13 +31,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $name ?></title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 </head>
 <body>
     
     <?php require_once "../php/header.php" ?>
     <div id = "background">
         <img src="../img/bg-4.png" id = "bg_3">
-        <img src="../img/bg-1.png" id = "bg_1">
     </div>
 
     <!-- Форма доната -->
@@ -58,10 +58,10 @@
             </div>
         </div>
         <div id = "donate_a">
-            <a href="https://vk.com/al_im.php?sel=657073694"><div class = "donate_a"><img src="img/search.PNG"></div></a>
-            <a href="https://vk.com/al_im.php?sel=657073694"><div class = "donate_a"><img src="img/search.PNG"></div></a>
-            <a href="https://vk.com/al_im.php?sel=657073694"><div class = "donate_a"><img src="img/search.PNG"></div></a>
-            <a href="https://vk.com/al_im.php?sel=657073694"><div class = "donate_a"><img src="img/search.PNG"></div></a>
+            <a href="https://vk.com/al_im.php?sel=657073694"><div class = "donate_a"><img src="../img/vk.png"></div></a>
+            <a href="https://vk.com/al_im.php?sel=657073694"><div class = "donate_a"><img src="../img/inst.png"></div></a>
+            <a href="https://vk.com/al_im.php?sel=657073694"><div class = "donate_a"><img src="../img/fb.png"></div></a>
+            <a href="https://vk.com/al_im.php?sel=657073694"><div class = "donate_a"><img src="../img/youtube.png"></div></a>
         </div>
     </div>
     <!-- ----- -->
@@ -69,7 +69,7 @@
     <main>
         <div id = "main_h1">О разделе</div>
         <div id = "main_text">
-            <p> Данный раздел посвящен языку программирования C++ </p>
+            <p> Данный раздел посвящен языку программирования <?= $lang[0][0] ?> </p>
 
             <p> 
                 <?= $descript ?>
