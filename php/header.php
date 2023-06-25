@@ -4,6 +4,17 @@
     $count = 5;
 ?>
 
+<script>
+    var myDiv = document.getElementById("header_window");
+
+    document.addEventListener("click", function(e) {
+        // Проверяем, был ли клик за пределами нашего объекта
+        if (!myDiv.contains(e.target)) {
+            myDiv.style.display = "none"; // Скрываем объект
+        }
+    });
+</script>
+
 <header>
     <script src="../js/code.js"></script>
 
@@ -14,8 +25,8 @@
         <?php for ($i=0; $i < $count; $i++) { ?>
             <a href="../html/language.php?lang=<?= $langid ?>" class = "header_button"><?= $nameL ?></a>
         <?php } ?>
-        <button onclick = "window_plus()">
-            <img src = "../img/arrow.PNG" class = "header_button" id = "header_button_img">
+        <button onclick = "window_plus()" id = "header_lang_button" class = "header_button">
+            <img src = "../img/arrow.PNG"  id = "header_button_img">
         </button>
 
         <!-- Дополнительные языки -->
@@ -34,6 +45,7 @@
         <form action="search.php" method="get">
             <input type="search" name="search" id="header_search_text">
             <input type="submit" value="???" id = "header_search_img">
+            <button type="submit" id = "header_search_img"><img id = "header_search_img2" src="../img/search.PNG"></button>
         </form>
     </div>
 </header> 

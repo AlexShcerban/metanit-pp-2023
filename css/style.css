@@ -16,6 +16,14 @@ header{
     height: 21px;
     position: absolute;
 }
+#header_lang_button{
+    background-color: rgb(255, 255, 255);
+    border-color: white;
+    box-shadow: white;
+    
+    box-shadow: none; /* не работает */
+    outline: none;
+}
 .header_button{
     margin-left: 32px;
 
@@ -63,8 +71,16 @@ header{
     height: 60px;
     width: 60px;
     position: absolute;
+    margin-left: 3px;
     border-radius: 28px;
-    background-color: #C89AFC;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+#header_search_img2{
+    height: 62px;
+    width: 62px;
+    margin-left: -9px;
+    margin-top: -3px;
 }
 #header_window{
     width: 195px;
@@ -450,6 +466,7 @@ footer{
     width: 61px;
     height: 33px;
     border-radius: 28px;
+    background-color: #D5D7DF;;
 }
 #search_results{
     margin-top: 22px;
@@ -462,6 +479,12 @@ footer{
     margin-top: 65px;
     width: 519px;
 }
+#search_img{
+    width: 20px;
+    height: 20px;
+    margin-left: 2px;
+    margin-top: 4px;
+}
 .search_block{
     margin-bottom: 40px;
 }
@@ -470,4 +493,8 @@ footer{
 }
 .search_folder{
     color: #7C6AFA;
+}
+.search_text{
+    overflow: hidden;
+    height: 54px;
 }

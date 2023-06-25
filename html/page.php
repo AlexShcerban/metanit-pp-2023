@@ -22,31 +22,6 @@
 <body>
     
     <?php require_once "../php/header.php" ?>
-        <!-- Форма доната -->
-        <div id = "donate_3">
-                <div id = "donate_block">
-                    <div id = "donate_text">
-                        Хотите помочь сайту? <br><br>
-                        Qiwi: <br>
-                        <a href="https://www.qiwi.com/n/MITANIT">qiwi.com/n/MITANIT</a><br><br><br>
-                        YooMoney: <br>
-                        <a href="https://www.qiwi.com/n/MITANIT">410011174743222</a>
-                    </div>
-                    <div id = "donate_card">
-                        <br>
-                        Перевод на карту <br>
-                        Номер карты: <br>
-                        <a href="https://www.qiwi.com/n/MITANIT">4048415020898850</a> <br>
-                    </div>
-                </div>
-                <div id = "donate_a">
-                    <a href="https://vk.com/al_im.php?sel=657073694"><div class = "donate_a"><img src="img/search.PNG"></div></a>
-                    <a href="https://vk.com/al_im.php?sel=657073694"><div class = "donate_a"><img src="img/search.PNG"></div></a>
-                    <a href="https://vk.com/al_im.php?sel=657073694"><div class = "donate_a"><img src="img/search.PNG"></div></a>
-                    <a href="https://vk.com/al_im.php?sel=657073694"><div class = "donate_a"><img src="img/search.PNG"></div></a>
-                </div>
-            </div>
-            <!-- ----- -->
 
     <main>
         <div class = "page_h1"><?= $name ?></div>
